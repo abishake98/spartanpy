@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+  environment {
+    IMAGE_NAME = "abishake98/spartanpy:0." + "$BUILD_NUMBER"
+  }
+
   stages {
     stage('Cloning the project '){
       steps {
@@ -12,7 +16,7 @@ pipeline {
     stage('Build Docker Image'){
       steps {
         script {
-          DOCKER_IMAGE = docker.build 'abishake98/spartanpy'
+          DOCKER_IMAGE = docker.build IMAGE_NAME
         }
       }
     }
