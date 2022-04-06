@@ -7,6 +7,14 @@ pipeline {
         git branch: 'main',
         url: 'https://github.com/abishake98/spartanpy.git'
       }
+
+    stage('Build Docker Image'){
+      steps {
+        script {
+          docker.build 'abishake98/spartanpy'
+        }
+      }
+    }
     }
   }
 }
