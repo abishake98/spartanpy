@@ -11,7 +11,7 @@ pipeline {
           steps {
             checkout([
                 $class: 'GitSCM', branches: [[name: '*/main']],
-                serRemoteConfigs: [[
+                UserRemoteConfigs: [[
                   url: 'git@github.com:abishake98/spartanpy.git',
                   credentialsId: 'ssh_git_cred'
                 ]]
