@@ -7,12 +7,17 @@ pipeline {
   }
 
   stages {
-    stage('Cloning the project '){
-      steps {
-        git branch: 'main',
-        url: 'https://github.com/abishake98/spartanpy.git'
-      }
-    }
+    stage('Cloning the project from GitHub'){
+          steps {
+            checkout([
+                $class: 'GitSCM', branches: [[name: '*/main']],
+                serRemoteConfigs: [[
+                  url: 'git@github.com:abishake98/spartanpy.git',
+                  credentialsId: 'ssh_git_cred'
+                ]]
+              ])
+          }
+        }
 
     stage('Build Docker Image'){
       steps {
