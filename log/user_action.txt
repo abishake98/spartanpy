@@ -1,0 +1,258 @@
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 2456, to the database
+User accessed the Home Page
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 1, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 2, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to add a Spartan to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to view a Spartan from the database
+User wants to view a Spartan from the database
+User entered a Spartan ID that does not exist in the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to view a Spartan from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to view a Spartan from the database
+User entered a Spartan ID that does not exist in the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to view a Spartan from the database
+User entered a Spartan ID that does not exist in the database
+User wants to view a Spartan from the database
+User wants to view a Spartan from the database
+User wants to view a Spartan from the database
+User wants to view a Spartan from the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 2345, to the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 2345, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 3, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 34263, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 23, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 2345, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 2, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User viewed all Spartans from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User viewed all Spartans from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User viewed all Spartans from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 223, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 23, to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 3, to the database
+User viewed all Spartans from the database
+User viewed all Spartans from the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 56753, to the database
+User wants to view a Spartan from the database
+User viewed the details of a Spartan, with Spartan ID 223, from the database
+User wants to remove a Spartan from the database
+User removed the details of a Spartan, with Spartan ID 223, from the database
+User accessed the Home Page
+User accessed the Home Page
+User viewed all Spartans from the database
+User viewed all Spartans from the database
+User viewed all Spartans from the database
+User viewed all Spartans from the database
+User wants to add a Spartan to the database
+User wants to add a Spartan to the database
+User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 56753, to the database
+User viewed all Spartans from the database
