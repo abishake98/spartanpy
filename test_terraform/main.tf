@@ -401,6 +401,7 @@ resource "aws_instance" "devops106_terraform_abishake_proxy_server_tf" {
     host = self.public_ip
     private_key = file(var.private_key_file_path_var)
   }
+}
 
 resource "aws_route53_zone" "devops106_terraform_abishake_dns_zone_tf" {
   name = "abishake.devops106"
