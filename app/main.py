@@ -8,9 +8,9 @@ import spartan
 
 from management import all_spartan_dictionary
 
+import random
 
-
-
+server_id = random.randint(1000, 9999)
 
 while True:
     try:
@@ -28,12 +28,7 @@ flask_object = Flask(__name__)
 def home_page():
     with open("log/user_action.txt", "a+") as user_action_file:
         user_action_file.write("User accessed the Home Page\n")
-    return """Welcome to Sparta Global's Employee Management System
-    Use the following APIs to navigate through web application:
-    /spartan/add : To Add a Spartan
-    /spartan/<spartan_id> : To View a Spartan, by Spartan ID
-    /spartan/remove?id=<spartan_id> : To Remove a Spartan
-    /spartan : To View All Spartans"""
+    return f"Welcome to Sparta Global's Employee Management System from Server {server_id}\nUse the following APIs to navigate through web application:/spartan/add : To Add a Spartan\n/spartan/<spartan_id> : To View a Spartan, by Spartan ID\n/spartan/remove?id=<spartan_id> : To Remove a Spartan\n/spartan : To View All Spartans"
 
 # POST for add spartan
 @flask_object.route("/spartan/add", methods=["POST"])

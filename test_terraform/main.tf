@@ -83,6 +83,15 @@ resource "aws_network_acl" "devops106_terraform_abishake_nacl_public_tf" {
   }
 
   ingress {
+    rule_no = 300
+    from_port = 80
+    to_port = 80
+    cidr_block = "0.0.0.0/0"
+    protocol = "tcp"
+    action = "allow"
+  }
+
+  ingress {
     rule_no = 10000
     from_port = 1024
     to_port = 65535
@@ -205,6 +214,13 @@ resource "aws_security_group" "devops106_terraform_abishake_sg_webserver_tf" {
     ingress {
       from_port = 8080
       to_port = 8080
+      protocol = "tcp"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+
+    ingress {
+      from_port = 80
+      to_port = 80
       protocol = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
     }
@@ -359,6 +375,32 @@ resource "aws_instance" "devops106_terraform_abishake_db_tf" {
   }
 */
 }
+
+data "template_file" "nginx_init" {
+  template = file("../init-scripts/nginx-install.sh")
+}
+
+resource "aws_instance" "devops106_terraform_abishake_proxy_server_tf" {
+  ami = var.ubuntu_20_04_ami_id_var
+  instance_type = "t2.micro"
+  key_name = var.public_key_name_var
+  vpc_security_group_ids = [aws_security_group.devops106_terraform_abishake_sg_webserver_tf.id]
+
+  subnet_id = aws_subnet.devops106_terraform_abishake_subnet_webserver_tf.id
+  associate_public_ip_address = true
+
+  user_data = data.template_file.nginx_init.rendered
+
+  tags = {
+    Name = "devops106_terraform_abishake_proxy_server"
+  }
+
+  connection {
+    type = "ssh"
+    user = "ubuntu"
+    host = self.public_ip
+    private_key = file(var.private_key_file_path_var)
+  }
 
 resource "aws_route53_zone" "devops106_terraform_abishake_dns_zone_tf" {
   name = "abishake.devops106"

@@ -256,3 +256,6 @@ User wants to add a Spartan to the database
 User wants to add a Spartan to the database
 User successfully added a Spartan, Abishake Ratnavel, with Spartan ID: 56753, to the database
 User viewed all Spartans from the database
+User accessed the Home Page
+User accessed the Home Page
+User wants to add a Spartan to the database
