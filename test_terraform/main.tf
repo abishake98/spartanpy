@@ -12,12 +12,27 @@ resource "aws_vpc" "devops106_terraform_abishake_vpc_tf" {
   }
 }
 
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 resource "aws_subnet" "devops106_terraform_abishake_subnet_webserver_tf" {
   vpc_id = local.vpc_id_var
   cidr_block = "10.202.1.0/24"
+  availability_zone = data.aws_availability_zones.available.names[0]
 
   tags = {
     Name = "devops106_terraform_abishake_subnet_webserver"
+  }
+}
+
+resource "aws_subnet" "devops106_terraform_abishake_subnet_webserver2_tf" {
+  vpc_id = local.vpc_id_var
+  cidr_block = "10.202.3.0/24"
+  availability_zone = data.aws_availability_zones.available.names[1]
+
+  tags = {
+    Name = "devops106_terraform_abishake_subnet_webserver2"
   }
 }
 
@@ -58,6 +73,11 @@ resource "aws_route_table_association" "devops106_terraform_abishake_rt_assoc_pu
 
 resource "aws_route_table_association" "devops106_terraform_abishake_rt_assoc_public_db_tf" {
     subnet_id = aws_subnet.devops106_terraform_abishake_subnet_db_tf.id
+    route_table_id = local.route_table_id_var
+}
+
+resource "aws_route_table_association" "devops106_terraform_abishake_rt_assoc_public_webserver2_tf" {
+    subnet_id = aws_subnet.devops106_terraform_abishake_subnet_webserver2_tf.id
     route_table_id = local.route_table_id_var
 }
 
@@ -284,7 +304,7 @@ resource "aws_instance" "devops106_terraform_abishake_webserver_tf" {
   subnet_id = aws_subnet.devops106_terraform_abishake_subnet_webserver_tf.id
   associate_public_ip_address = true
 
-  count = 3
+  count = 2
   #user_data = join("\n", [data.template_file.app_init.rendered, data.template_file.app_run.rendered])
 #  user_data = [
 #    "data.template_file.app_init.rendered",
@@ -335,6 +355,36 @@ resource "aws_instance" "devops106_terraform_abishake_webserver_tf" {
     ]
   }
 */
+}
+
+resource "aws_instance" "devops106_terraform_abishake_webserver2_tf" {
+  ami = var.ubuntu_20_04_ami_id_var
+  instance_type = "t2.micro"
+  key_name = var.public_key_name_var
+  vpc_security_group_ids = [aws_security_group.devops106_terraform_abishake_sg_webserver_tf.id]
+
+  subnet_id = aws_subnet.devops106_terraform_abishake_subnet_webserver2_tf.id
+  associate_public_ip_address = true
+
+  count = 2
+  #user_data = join("\n", [data.template_file.app_init.rendered, data.template_file.app_run.rendered])
+#  user_data = [
+#    "data.template_file.app_init.rendered",
+#    "data.template_file.app_run.rendered"
+#  ]
+  user_data = data.template_file.app_init.rendered
+#  user_data = data.template_file.app_run.rendered
+
+  tags = {
+    Name = "devops106_terraform_abishake_webserver2_${count.index}"
+  }
+
+  connection {
+    type = "ssh"
+    user = "ubuntu"
+    host = self.public_ip
+    private_key = file(var.private_key_file_path_var)
+  }
 }
 
 data "template_file" "db_init" {
@@ -417,4 +467,47 @@ resource "aws_route53_record" "devops106_terraform_abishake_dns_db_tf" {
   type = "A"
   ttl = "30"
   records = [aws_instance.devops106_terraform_abishake_db_tf.public_ip]
+}
+
+#Load balancer
+resource "aws_lb" "devops106_terraform_abishake_lb_tf" {
+  name = "devops106terraformabishake-lb"
+  internal = false
+  load_balancer_type = "application"
+  subnets = [aws_subnet.devops106_terraform_abishake_subnet_webserver_tf.id, aws_subnet.devops106_terraform_abishake_subnet_webserver2_tf.id]
+  security_groups = [aws_security_group.devops106_terraform_abishake_sg_webserver_tf.id]
+  tags = {
+    Name = "devops106_terraform_abishake_lb"
+  }
+}
+
+resource "aws_alb_target_group" "devops106_terraform_abishake_tg_tf"{
+  name = "devops106terraformabishake-tg"
+  port = 8080
+  target_type = "instance"
+  protocol = "HTTP"
+  vpc_id = local.vpc_id_var
+}
+
+resource "aws_alb_target_group_attachment" "devops106_terraform_abishake_tg_attach_tf" {
+  target_group_arn = aws_alb_target_group.devops106_terraform_abishake_tg_tf.arn
+  count = length(aws_instance.devops106_terraform_abishake_webserver_tf)
+  target_id = aws_instance.devops106_terraform_abishake_webserver_tf[count.index].id
+}
+
+resource "aws_alb_target_group_attachment" "devops106_terraform_abishake_tg2_attach_tf" {
+  target_group_arn = aws_alb_target_group.devops106_terraform_abishake_tg_tf.arn
+  count = length(aws_instance.devops106_terraform_abishake_webserver2_tf)
+  target_id = aws_instance.devops106_terraform_abishake_webserver2_tf[count.index].id
+}
+
+resource "aws_alb_listener" "devops106_terraform_abishake_lb_listener_tf" {
+  load_balancer_arn = aws_lb.devops106_terraform_abishake_lb_tf.arn
+  port = 80
+  protocol = "HTTP"
+
+  default_action {
+    type = "forward"
+    target_group_arn = aws_alb_target_group.devops106_terraform_abishake_tg_tf.arn
+  }
 }
